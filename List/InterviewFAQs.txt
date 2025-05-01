@@ -1,0 +1,90 @@
+Interview Questions
+=====================
+
+Q1. What is Collection Interface?
+=>
+-Collection interface is sub interface of Iterable interface available in java.util package
+from JDK 1.2v.
+-Collection interface is the root interface of Collections Framework.
+-It reperesents a group of objects known as elements.
+-Also it is the super interface of List, Set and Queue interfaces.
+
+--------------------------------------------------------------------------------------------
+
+Q2. In How many ways we can fetch data from collection?
+=>
+There are total 9 ways we can fetch data from collection they are as follows:
+1. Ordinary for loop [from 1.0v]
+2. for each loop    [from 1.5v]
+3. for each method  [from 1.8v]
+4. Enumeration  [from 1.0v]
+5. Iterator     [from 1.2v]
+6. SpliIterator [from 1.8v]
+7. toString     [from 1.0v]
+8. Method Reference [from 1.8v]
+9. ListIterator     [from 1.2v]
+
+---------------------------------------------------------------------------------------
+
+Q3. What is List Interface?
+=>
+-List interface is the sub interface of Collection inteface available in java.util package
+from JDK 1.2v.
+-Internally List interface follows array concept so it stores elements based on index basis.
+-It accepts Duplicate elements.
+-It also accepts null, hetrogenous and homogenious values.
+-We can directly perform sorting operation on List using Collections.sort(List l).
+-List interfaces are having implementing classes they are ArrayList, LinkedList, Vector and Stack.
+
+--------------------------------------------------------------------------------------------------
+
+Q4. What is Enumeration Interface?
+=>
+-Enumeration interface is a predefined interface available from JDK 1.0v
+-It is also konow as legacy interface.
+-It used to fetch or retrieve Collection elements one by one because it is a cursor.
+-we can also create an object of Enumeration inteface using elements() Method.
+public Enumeration elements()
+-It has 2 methods to perform retrieve operations.
+1. public boolean hasMoreElements() -> It will return true if more elements are there in collection.
+2. public Object nextElement() -> It will return a object and move cursor to next line.
+
+-------------------------------------------------------------------------------------------------------
+
+Q5. What is Iterator Interface?
+=>
+-Iterator interface is a predefined interface available in java.util package from JDK 1.2v
+-It is used to fetch / retrieve elements from Collection in forward direction only because it has cursor.
+-public Itertaor iterator();
+-It has 2 methods to perfoem retrieve operations
+1. public boolean hasNext() -> It will verify element is available in next position if yes then return true.
+2. public Object next() -> it will return object and move cursor to next line.
+
+---------------------------------------------------------------------------------------------------------
+
+Q6. What is ListIterator Interface?
+=>
+-ListIterator interface is a predefined interface available in java.util package from JDK 1.2v.
+-It is the sub interface of Iterator interface.
+-It is used to retrieve / fetch Collection objects in both forward and backward directions.
+-public ListIterator listIterator();
+-It has 4 methods to perform retrieve operations.
+1. public boolean hasNext();
+->It will verify object is available in next position if yes then return true.
+2. public boolean hasPrevious();
+->It will verify object is available in previous position if yes then retrun true.
+3. public Object next();
+->It will return object and move the cursor forward to next object.
+4. public Object previous();
+->It will return object and move cursor to backward to previous object.
+
+-------------------------------------------------------------------------------------------------------------
+
+Q7. What is SplIterator Interface?
+=>
+-SplIterator Iterator is a predefined inteface available in java.util package from JDK 1.8v.
+-It is used to retrieve elements from Collection [array, Collection, stream].
+-To retrieve elements it uses  forEachRemaininig(Consumer<T> cons) method.
+- forEachRemaininig(Consumer<T> cons) method is the combination of hasNext() and next() methods.
+
+-----------------------------------------------------------------------------------------------------------------
