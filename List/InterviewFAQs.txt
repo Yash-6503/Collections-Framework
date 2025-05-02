@@ -88,3 +88,37 @@ Q7. What is SplIterator Interface?
 - forEachRemaininig(Consumer<T> cons) method is the combination of hasNext() and next() methods.
 
 -----------------------------------------------------------------------------------------------------------------
+
+Q8. What is Vector?
+=>
+-class signature of Vector is as follows:
+public class Vector<E> extends AbstractList<E> implements List<E>, Serializable, Clonable, RandomAccess
+-Vector is a implementer class of List interface available in java.util package from JDK 1.0v.
+-It is aslo known as legacy(old) class.
+-It accepts duplicates, null, hetrogenous and homogenious elements.
+-It stores elements on index basis.
+-It is dynamically growable with initial capacity 10.
+-When initial capacity reaches its limit then new capacity will be double than initial capacity
+formula: new_capacity = initial_capacity * 2
+-Here Iterator is fail fast iterator.
+-Difference between ArrayList and Vector is ArrayList methods are not synchronized so muliple threads 
+can access methods but on the other hand somr vector methods are synchronized so vector is slow in nature.
+-Vector is implementing List, Serializable, Clonable and RandomAccess interfaces.
+-Vector and HashTable both are only legacy classes others came in JDK 1.2v
+
+-----------------------------------------------------------------------------------------------------------------
+
+Q9. How many Constructors are there in Vector?
+=>
+There are total 4 Constructors available in Vector they are as follows:
+1. Vector v = new Vector();
+It will create vector object with default initialcapacity of 10.
+2. Vector v = new Vector(int initialCapacity);
+It will create vector object with user specified capacity.
+3. Vector v = new Vector(int initialCapacity, int capacityIncrement);
+It will create vector object with user specified initialCapacity and when capacity will full then it will
+increment by capacityIncrement given. ex.5 then 5, 10, 15, 20, etc.
+4. Vector v = new Vector(Collection c);
+To achieve loose coupling.
+
+----------------------------------------------------------------------------------------------------------------
