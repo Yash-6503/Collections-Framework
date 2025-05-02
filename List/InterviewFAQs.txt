@@ -122,3 +122,32 @@ increment by capacityIncrement given. ex.5 then 5, 10, 15, 20, etc.
 To achieve loose coupling.
 
 ----------------------------------------------------------------------------------------------------------------
+
+Q10. What is Stack?
+=>
+-Stack is a predefined class available in java.util package.
+-It is the sub class of Vector class available from JDK 1.0v also known as legacy(old) class.
+-It is a linear data structure used to store objects in LIFO(Last In First Out) order.
+-Inserting object in stack is push operation where as extracting object from stack is pop operation.
+-It throws java.util.EmtyStackException when we try to print empty stack.
+-It has only one Constructor i.e Stack s = new Stack() it will create empty stack.
+
+----------------------------------------------------------------------------------------------------------------
+
+Q11. Methods of Stack?
+=>
+There are 5 methods in stack class to perform operations.
+1. public E push(Object o){}
+-It will push the object into stack.
+2. public E pop(){}
+-It will retrieve object from top of stack.
+3. public E peek(){}
+-It will return topmost object from stack.
+4. public boolean isEmpty(){}
+-It will return true if stack is empty otherwise false.
+5. public int search(Object o){}
+-it will return offset position if object is present otherwise it will return -1;
+
+---------------------------------------------------------------------------------------------------------------
+
+
