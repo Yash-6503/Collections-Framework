@@ -150,4 +150,31 @@ There are 5 methods in stack class to perform operations.
 
 ---------------------------------------------------------------------------------------------------------------
 
+Q12. What is ArrayList?
+=>
+-class signature of ArrayList is as follows:
+public class ArrayList<E> extends AbstractList<E> implements List<E>, Serializable, Clonable, RandomAccess{}
+-ArrayList is a predefined class available in java.util package under List interface from JDK 1.2v.
+-It is a dynamically growable array.
+-It accepts duplicates, null, hetrogenous and homogenious elements.
+-It stores elements on index basis because it is a dynamic array.
+-It grows dynamically when its derafult capacity is full i.e 10. then it will calculate new capacity as follows:
+new_capacity = (initial_capacity * 3)/2 + 1  i.e Almost 50% of increment.
+-All methods of ArrayList are not synchronized so multiple threads can access methods and performance is good.
+-ArrayList is useful for reterival operations when duplicates are allowed and Thread safety not required.
+-Here Iterator is fail fast Iterator.
+-ArrayList implementes List, Serializable, Clonable and RandomAccess interfaces.
 
+------------------------------------------------------------------------------------------------------------------
+
+Q13. How many Constructors are there in ArrayList?
+=>
+There are total 3 Constructors in ArrayList as follows:
+1. ArrayList list = new ArrayList();
+-It will create ArrayList object with default capacity of 10.
+2. ArrayList list = new ArrayList(int initialCapacity);
+-It will create ArrayList object with user specified capacity.
+3. ArrayList list = new ArrayList(Collection c);
+-we can copy any Collection data into this object.
+
+----------------------------------------------------------------------------------------------------------------
