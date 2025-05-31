@@ -178,3 +178,6 @@ There are total 3 Constructors in ArrayList as follows:
 -we can copy any Collection data into this object.
 
 ----------------------------------------------------------------------------------------------------------------
+
+Q14. What is Map<K,V> interface?
+=>
