@@ -181,3 +181,8 @@ There are total 3 Constructors in ArrayList as follows:
 
 Q14. What is Map<K,V> interface?
 =>
+Map<K,V> is the interface availble form JDK 1.2v
+It stores values based on key value pairs.
+It accepts only one key as null and many null values.
+Map not come under Collection interface it is  a separate interface.
+Before Map interface we have Dictonary class it is also called as legacy class.
