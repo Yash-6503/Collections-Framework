@@ -1,0 +1,64 @@
+Interview Question and Answers of Set Interfaces and its sub classes.
+---------------------------------------------------------------------------------------------
+
+Q1. What is Set Interface?
+=> 
+- Set is an Interface available under Collection Interface in java.util package from JDK 1.2v
+- It does not stores duplicates.
+- It does not maintains any order it is unordered.
+- Methods of Set interface are not synchronized.
+- On Set inteface we can't use ListIterator.
+- It stores elements based on Hashing Algorithm.
+
+------------------------------------------------------------------------------------------------
+
+Q2. What is Hashing Algorithm?
+=> 
+- It is a technique through which we perform operations like insert, delete, search, etc.
+- In this Algorithm we are not using classical index basis approach.
+- Hashing Algorith Internally uses HashTable data structure and HashTable Internally uses Bucket
+   data structure.
+- Here, We perform operation like insert, delete and search with same efficiency that is O(1).
+Formula:
+---------
+    hashvalue = key % HashTable_Length
+                67  % 16
+                3
+        Here, in 3rd position of hash table this 67 element will store.
+        Like this it will work for all of other elements.
+        If in case, another element whose hashvalue came same as any value present in any position
+        then it is called as Hash Collision problem.
+        To solve Hash Collision problem we need to use Singly LinkedList.
+
+---------------------------------------------------------------------------------------------------
+
+Q3. What is HashSet?
+=>
+Method Signature of HashSet class..
+public HashSet<E> extends AbstractSet<E> implements Set<E>, Serializable, Clonable { }
+- HashSet is a sub class of Set Interface available in java.util package from JDK 1.2v
+- It is unordered and unsorted set.
+- It does not accepts duplicates because Internally equal(Object obj) method is working.
+- It accepts hetrogenous and homogenious values.
+- It accepts only one null value.
+- Methods of HashSet are not synchronized.
+- It stores elements by using Hashing Algorithm.
+- Initially hash table creates with default capacity of 16 and wiht default load factor of 0.75
+- HashSet is mainly used for fast searching.
+- It performs constant operations by complexcity of O(1).
+
+--------------------------------------------------------------------------------------------------
+
+Q4. How many Constructors are there in HashSet?
+=> 
+- There are total 4 Constructors are available in HashSet they are as follows
+1. HashSet hs1 = new HashSet();
+   Here, it will create a hashSet with default capacity of 16 and load factor of 0.75
+2. HashSet hs2 = new HashSet(int initial_capacity);
+   Here, it will create a HashSet with user specified capacity and default load factor.
+3. HashSet hs3 = new HashSet(int initial_capacity, float load_factor);
+   Here, it will create a HashSet with user specified capacity and load factor.
+4. HashSet hs4 = new HashSet(Collection c);
+   Here, it is to achieve loose coupling i.e (Interconversion of Collection)
+
+-------------------------------------------------------------------------------------------------
