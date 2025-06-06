@@ -62,3 +62,6 @@ Q4. How many Constructors are there in HashSet?
    Here, it is to achieve loose coupling i.e (Interconversion of Collection)
 
 -------------------------------------------------------------------------------------------------
+
+Q4. What is LinkedHashSet?
+=>
