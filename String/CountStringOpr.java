@@ -88,7 +88,7 @@ public class CountStringOpr {
 }
 
 /*
- * Output
+ * Output:
  * Enter a String :
  * 
  * String cannot be empty.
