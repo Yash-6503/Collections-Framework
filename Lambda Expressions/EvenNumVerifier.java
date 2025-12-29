@@ -27,6 +27,8 @@ public class EvenNumVerifier {
         };
 
         System.out.println(verify.verifyEvenNum(num) ? num + " is Even Number" : num + " is not Even Number");
+
+        sc.close();
     }    
 }
 
