@@ -26,7 +26,10 @@ public class Calculator {
         };
 
         Double res = calc.doSum(num1, num2);
-        System.out.println(res > 0 ? "Sum of "+num1+" + "+num2+" = "+res : "Please provide +ve numbers to calculate");
+        System.out.println(
+                res > 0 ? "Sum of " + num1 + " + " + num2 + " = " + res : "Please provide +ve numbers to calculate");
+
+        sc.close();
     }
 }
 
