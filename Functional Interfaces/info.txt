@@ -17,7 +17,8 @@ A functional interface can be annotated be @FunctionalInterface annotation.
 public interface Printable 
 {	
 
-   void print();  //[SAM = Single Abstract Method]
+   //[SAM = Single Abstract Method]
+   void print();  
    
    default void m1()
    {
